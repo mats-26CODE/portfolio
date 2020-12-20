@@ -1,3 +1,38 @@
+/* Fonts */
+@font-face {
+  font-family: "freestyleScript";
+  src: url("./assets/fonts/freeStyleScript.ttf");
+}
+
+@font-face {
+  font-family: "Ubuntu-light";
+  src: url("./assets/fonts/Ubuntu-Light.ttf");
+}
+@font-face {
+  font-family: "Ubuntu-regular";
+  src: url("./assets/fonts/Ubuntu-Regular.ttf");
+}
+@font-face {
+  font-family: "Ubuntu-bold";
+  src: url('./assets/fonts/Ubuntu-Bold.ttf');
+}
+@font-face {
+  font-family: "AvenirBook";
+  src: url('./assets/fonts/avenirBook.otf');
+}
+@font-face {
+  font-family: "AvenirBlack";
+  src: url('./assets/fonts/avenirBlack.otf');
+}
+@font-face {
+  font-family: "AvenirRoman";
+  src: url('./assets/fonts/avenirRoman.otf');
+}
+@font-face {
+  font-family: "sofiaProLight";
+  src: url('./assets/fonts/sofiaProLight.otf');
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +45,32 @@
 }
 
 @keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .fanIcon {
+    color: #5bdfe4;
+    -webkit-animation-name: spin;
+    animation-name: spin;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+  }
+}
+
+@keyframes spin {
   from {
     transform: rotate(0deg);
   }
