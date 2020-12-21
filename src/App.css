@@ -17,31 +17,47 @@
   src: url('./assets/fonts/Ubuntu-Bold.ttf');
 }
 @font-face {
-  font-family: "AvenirBook";
-  src: url('./assets/fonts/avenirBook.otf');
+  font-family: "Nunito-bold";
+  src: url('./assets/fonts/Nunito-Bold.ttf');
 }
 @font-face {
-  font-family: "AvenirBlack";
-  src: url('./assets/fonts/avenirBlack.otf');
+  font-family: "Nunito-light";
+  src: url('./assets/fonts/Nunito-Light.ttf');
 }
 @font-face {
-  font-family: "AvenirRoman";
-  src: url('./assets/fonts/avenirRoman.otf');
+  font-family: "Nunito-regular";
+  src: url('./assets/fonts/Nunito-Regular.ttf');
 }
 @font-face {
-  font-family: "sofiaProLight";
-  src: url('./assets/fonts/sofiaProLight.otf');
+  font-family: "Poppins-bold";
+  src: url('./assets/fonts/Poppins-Bold.ttf');
 }
+@font-face {
+  font-family: "Poppins-regular";
+  src: url('./assets/fonts/Poppins-Regular.ttf');
+}
+@font-face {
+  font-family: "Poppins-light";
+  src: url('./assets/fonts/Poppins-Light.ttf');
+}
+@font-face {
+  font-family: "Poppins-medium";
+  src: url('./assets/fonts/Poppins-Medium.ttf');
+}
+
 
 * {
   margin: 0;
   padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html {
+  scroll-snap-align: y mandatory;
+}
+
+.App {
+  height: 100vh;
+  display: grid;
 }
 
 @keyframes App-logo-spin {
@@ -56,7 +72,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .fanIcon {
-    color: #5bdfe4;
+    color: #ADFCF9;
     -webkit-animation-name: spin;
     animation-name: spin;
     -webkit-animation-duration: 2s;
