@@ -10,9 +10,10 @@ import { FaFan } from "react-icons/fa";
 const useStyles = makeStyles((theme) => ({
     root: {
       flexGrow: 1,
+      zIndex: -5
     },
     app_bar: {
-      backgroundColor: '#1c1c1c',
+      backgroundColor: '#161616',
       height: '10vh',
     },
     toolBar: {

@@ -89,6 +89,23 @@ footer > div h6 {
   }
 }
 
+.fanIcon:hover {
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  transform: scale(1.2);
+  -webkit-transform: scale(1.5);
+  -webkit-animation-name: spin;
+    animation-name: spin;
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+
 @keyframes spin {
   from {
     transform: rotate(0deg);

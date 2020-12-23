@@ -42,7 +42,7 @@
     background-color: #1c1c1c;
     display: grid;
     place-items: center;
-    z-index: -1;
+    z-index: 1;
 }
 
 .landing_dp {
@@ -55,7 +55,7 @@
     border-radius: 50%;
     padding: 0.5rem;
     position: relative;
-    background: #222;
+    background: #1c1c1c;
 }
 
 .landing_dp::after {
@@ -125,9 +125,9 @@
     }
 }
 
-.landing_contact_info {
-    /* text-align: center; */
-}
+/* .landing_contact_info {
+    text-align: center;
+} */
 
 .contact_box {
     width: 15%;
@@ -140,10 +140,15 @@
     color: #BCE7FD;
     border: 0.15rem solid #1b5dc0;
     border-radius: 2rem;
-    font-family: oMailNunito-bold, sans-serif;
+    font-family: Nunito-bold, sans-serif;
     font-size: 0.8rem;
     text-align: center;
     text-transform: capitalize;
+}
+
+.contact_box a {
+    color: #BCE7FD;
+    text-decoration: none;
 }
 
 .mouseIcon,
@@ -206,7 +211,7 @@
     font-family: Nunito-regular, sans-serif;
     font-size: 1.6rem;
     color: #BCE7FD;
-    margin: 0.5rem 0 0.5rem 0;
+    margin: 0.8rem 0 0.8rem 0;
 }
 
 .aboutBox p {

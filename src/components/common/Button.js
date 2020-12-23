@@ -1,14 +1,14 @@
 import React from 'react';
 import { Button as Btn } from '@material-ui/core';
 
-const Button = ({text, onClick, variant, startIcon}) => {
+const Button = ({text, onClick, variant, startIcon, href}) => {
     return (
         <Btn
             onClick={onClick}
             variant={variant}
             startIcon={startIcon}
         >
-            {text}
+            <a href={href}>{text}</a>
         </Btn> 
     )
 }

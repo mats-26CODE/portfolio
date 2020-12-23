@@ -17,16 +17,17 @@ const useStyles = makeStyles((theme) => ({
       width: theme.spacing(12),
       height: theme.spacing(12),
     },
-  }));
+}));
+
 
 const Home = () => {
     const classes = useStyles();
-
+    
     return (
         <div className={"home_container"}>
             <Grid container className={"scrollBox"}>
                 <div className={"landing_box"}>
-                    <Grid container>
+                    <div>
                         <Grid container className={"landing_info_box"}>
                             <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
                                 <div className={"landing_dp"}>
@@ -57,6 +58,7 @@ const Home = () => {
                                     <Button 
                                         variant={"container"}
                                         text={"Contact"}
+                                        href={"mailto: mathayomaendeleo@gmail.com"}
                                     />
                                 </div>
                             </Grid>
@@ -75,7 +77,7 @@ const Home = () => {
                                 </div>
                             </Grid>
                         </Grid>
-                    </Grid>
+                    </div>
                 </div>
             </Grid>
 
@@ -97,7 +99,7 @@ const Home = () => {
                                         <span className={"strike"}>all</span>, problems.
                                         <br/>
                                         I enjoy UI/UX designing, to be honest i am not marvel, but I can make your app's UI/UX fly like superman!
-                                        Oh did I just mention a DC superhero ? Oh Whatever! <span className={"emoji"} role="img" aria-label="emoji">😎</span> 
+                                        Oh, did I just mention a DC superhero ? Oh Whatever! <span className={"emoji"} role="img" aria-label="emoji">😎</span> 
                                         <br/>
                                         <span className={"emoji"} role="img" aria-label="emoji">👉</span> <span className={"workText"}>Working at <a href="https://www.firm23.co.tz" target="_blank" rel="noreferrer noopener">Firm23</a></span> <span className={"blinkingVL"}>/</span>
                                     </p>
