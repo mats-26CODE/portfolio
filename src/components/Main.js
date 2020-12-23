@@ -17,6 +17,10 @@ const Main = () => {
                 <Route exact path={"/"} component={Home} />
                 <Route exact path={"/portfolio"} component={Portfolio} />
             </div>
+
+            <footer>
+                <div><h6>© Copyright Mat, 2021</h6></div>
+            </footer>
         </BrowserRouter>
     )
 }

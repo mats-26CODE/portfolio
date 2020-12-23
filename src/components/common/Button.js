@@ -1,16 +1,15 @@
 import React from 'react';
 import { Button as Btn } from '@material-ui/core';
 
-const Button = ({text, onClick, type, }) => {
+const Button = ({text, onClick, variant, startIcon}) => {
     return (
-        <div className={"buttonWrapper"}>
-            <Btn
-                type={type}
-                onClick={onClick}
-            >
-                {text}
-            </Btn>
-        </div> 
+        <Btn
+            onClick={onClick}
+            variant={variant}
+            startIcon={startIcon}
+        >
+            {text}
+        </Btn> 
     )
 }
 

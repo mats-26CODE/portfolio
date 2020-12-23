@@ -17,7 +17,8 @@ const useStyles = makeStyles((theme) => ({
     },
     toolBar: {
       display: 'flex',
-      justifyContent: 'space-between'
+      justifyContent: 'space-between',
+      alignItems: 'center'
     },
     avatar: {
       textDecoration: 'none',
@@ -43,7 +44,6 @@ const useStyles = makeStyles((theme) => ({
     linksBox: {
       display: 'flex',
       alignItems: 'center',
-      // marginRight: '10rem',
     },
 }));
 
@@ -60,7 +60,7 @@ const NavBar = () => {
 
           <div className={classes.linksBox}>
             <Typography variant="h6" className={classes.navLink}>
-              About
+              <span className={"about"}><a href="#about">About</a></span>
             </Typography>
 
             <Typography variant="h6" className={classes.navLink} component={Link} to="/portfolio">
