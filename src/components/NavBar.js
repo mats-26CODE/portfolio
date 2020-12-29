@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
       textDecoration: 'none',
       fontFamily: 'Ubuntu, sans-serif',
       backgroundColor: '#1b5dc0',
-      color: '#BCE7FD'
+      color: '#c5c5c5'
     },
     navLink: {
       fontSize: '1.6rem',
@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
       textDecoration: 'underline',
       fontWeight: 'normal',
       margin: '1rem',
-      color: '#BCE7FD',
+      color: '#c5c5c5',
       '&:hover': {
         color: '#fcfcfc',
         cursor: 'pointer',

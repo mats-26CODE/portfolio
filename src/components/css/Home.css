@@ -137,24 +137,25 @@
 .contact_box button {
     width: 100%;
     padding: 0.2rem 1rem 0.2rem 1rem;
-    color: #BCE7FD;
+    color: #c5c5c5;
     border: 0.15rem solid #1b5dc0;
     border-radius: 2rem;
     font-family: Nunito-bold, sans-serif;
     font-size: 0.8rem;
     text-align: center;
     text-transform: capitalize;
+    text-decoration: underline;
 }
 
 .contact_box a {
-    color: #BCE7FD;
+    color: #c5c5c5;
     text-decoration: none;
 }
 
 .mouseIcon,
 .chevronIcon {
     font-size: 1.6rem;
-    color: #BCE7FD;
+    color: #c5c5c5;
     -webkit-animation-name: bounce;
     animation-name: bounce;
     -webkit-animation-duration: 1s;
@@ -203,21 +204,21 @@
 .aboutBox h5 {
     font-family: Nunito-bold, sans-serif;
     font-size: 3rem;
-    color: #BCE7FD;
+    color: #c5c5c5;
     text-align: center;
 }
 
 .aboutBox h6 {
     font-family: Nunito-regular, sans-serif;
     font-size: 1.6rem;
-    color: #BCE7FD;
+    color: #c5c5c5;
     margin: 0.8rem 0 0.8rem 0;
 }
 
 .aboutBox p {
     font-family: Poppins-regular, sans-serif;
     font-size: 1rem;
-    color: #BCE7FD;
+    color: #c5c5c5;
     margin: 0.5rem 0 0.5rem 0;
 }
 
@@ -228,7 +229,7 @@
 }
 
 .workText a, .socialBox h6 a, .about a {
-    color: #BCE7FD;
+    color: #c5c5c5;
 }
 
 .workText a:hover, .socialBox h6 a:hover, .about a:hover {
@@ -249,7 +250,7 @@
 .socialBox h5 {
     font-family: freeStyleScript, sans-serif;
     font-size: 3.2rem;
-    color: #BCE7FD;
+    color: #c5c5c5;
     font-weight: normal;
     text-align: center;
 }
@@ -258,7 +259,7 @@
 .socialBox h6 {
     font-family: freeStyleScript, sans-serif;
     font-size: 2rem;
-    color: #BCE7FD;
+    color: #c5c5c5;
     font-weight: normal;
     text-align: center;
 }

@@ -75,7 +75,7 @@ footer > div h6 {
 
 @media (prefers-reduced-motion: no-preference) {
   .fanIcon {
-    color: #ADFCF9;
+    color: #4884dd;
     -webkit-animation-name: spin;
     animation-name: spin;
     -webkit-animation-duration: 2s;
