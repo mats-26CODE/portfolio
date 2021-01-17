@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="842ff0dd-de0a-436f-a3c4-8aa68d2639db" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/images/coding.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/coding.svg" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -109,8 +108,8 @@
       <file leaf-file-name="Home.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/css/Home.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="134" column="18" selection-start-line="134" selection-start-column="12" selection-end-line="134" selection-end-column="18" />
+            <state relative-caret-position="284">
+              <caret line="29" column="29" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -259,12 +258,12 @@
       <updated>1610874571401</updated>
       <workItem from="1610874572574" duration="17275000" />
       <workItem from="1610911298461" duration="711000" />
-      <workItem from="1610914236656" duration="4577000" />
+      <workItem from="1610914236656" duration="5250000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22563000" />
+    <option name="totallyTimeSpent" value="23236000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -279,7 +278,7 @@
     <frame x="6" y="35" width="1400" height="765" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.498503" visible="true" weight="0.14213198" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.498503" visible="true" weight="0.14213198" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32934132" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -288,7 +287,7 @@
       <window_info id="npm" order="2" sideWeight="0.50149703" side_tool="true" weight="0.14213198" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32934132" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.25449103" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.25449103" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -541,8 +540,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/css/Home.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="134" column="18" selection-start-line="134" selection-start-column="12" selection-end-line="134" selection-end-column="18" />
+        <state relative-caret-position="284">
+          <caret line="29" column="29" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="29" />
         </state>
       </provider>
     </entry>
