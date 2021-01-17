@@ -1,5 +1,6 @@
 import { Avatar, Grid } from '@material-ui/core';
 import React from 'react';
+import { ReactComponent as codingArtwork } from '../assets/images/coding.svg';
 import { IoChevronDownOutline, IoLogoFacebook, IoLogoGithub } from 'react-icons/io5';
 import { AiFillTwitterCircle } from "react-icons/ai";
 import './css/Home.css';
@@ -78,6 +79,8 @@ const Home = () => {
                             </Grid>
                         </Grid>
                     </div>
+
+                    <codingArtwork />
                 </div>
             </Grid>
 
@@ -125,10 +128,10 @@ const Home = () => {
                             <h5>Don't just pass by, Say Hi !</h5>
                         </Grid>
 
-                        <Grid item xs={12} sm={12} md={12} lg={12} xl={12} style={{textAlign: 'center'}}>
-                            <a href='https://www.twitter.com/chmod_tz' target="_blank" rel="noreferrer noopener"><AiFillTwitterCircle color="#c5c5c5" size='2em'/></a>
-                            <a href='https://www.facebook.com/mat2694/' target="_blank" rel="noreferrer noopener"><IoLogoFacebook color="#c5c5c5" size='2em' /></a>
-                            <a href='https://www.github.com/mats-26CODE' target="_blank" rel="noreferrer noopener"><IoLogoGithub color="#c5c5c5" size='2em'/></a>
+                        <Grid item xs={12} sm={12} md={12} lg={12} xl={12} style={{textAlign: 'center'}} className={"socialIconsBox"}>
+                            <a href='https://www.twitter.com/chmod_tz' target="_blank" rel="noreferrer noopener"><AiFillTwitterCircle color="#c5c5c5" size='2em' className={"socialIcon"}/></a>
+                            <a href='https://www.facebook.com/mat2694/' target="_blank" rel="noreferrer noopener"><IoLogoFacebook color="#c5c5c5" size='2em' className={"socialIcon"}/></a>
+                            <a href='https://www.github.com/mats-26CODE' target="_blank" rel="noreferrer noopener"><IoLogoGithub color="#c5c5c5" size='2em'className={"socialIcon"}/></a>
                         </Grid>
 
                         <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>

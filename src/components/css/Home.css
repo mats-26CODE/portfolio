@@ -23,7 +23,7 @@
 }
 
 .home_container > div:nth-child(2) {
-    background-color: #1b5dc0;
+    background-color: #2A2ACC;
 }
 
 .home_container > div:last-child {
@@ -138,7 +138,7 @@
     width: 100%;
     padding: 0.2rem 1rem 0.2rem 1rem;
     color: #c5c5c5;
-    border: 0.15rem solid #1b5dc0;
+    border: 0.15rem solid #5554D7;
     border-radius: 2rem;
     font-family: Nunito-bold, sans-serif;
     font-size: 0.8rem;
@@ -230,6 +230,7 @@
 
 .workText a, .socialBox h6 a, .about a {
     color: #c5c5c5;
+    text-decoration-color: #5554D7;
 }
 
 .workText a:hover, .socialBox h6 a:hover, .about a:hover {
@@ -262,5 +263,44 @@
     color: #c5c5c5;
     font-weight: normal;
     text-align: center;
+}
+
+.socialIcon {
+    border: 0.15rem solid #5554D7;
+    border-radius: 50%;
+    margin: 0 .4rem 0 0.4rem;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+}
+
+.socialIcon:hover {
+    background: linear-gradient(
+            60deg,
+            hsl(240, 62%, 59%),
+            hsl(241, 62%, 59%),
+            hsl(241, 44%, 45%),
+            hsl(245, 59%, 61%),
+            hsl(199, 100%, 36%),
+            hsl(240, 100%, 69%),
+            hsl(240, 47%, 20%),
+            hsl(241, 42%, 37%)
+    );
+    background-size: 200% 200%;
+    background-position: 0 50%;
+    border-radius: 50%;
+    animation: moveGradient 4s alternate infinite;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -ms-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
