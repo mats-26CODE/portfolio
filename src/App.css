@@ -120,3 +120,29 @@ footer > div h6 {
 }
 
 
+/*-----Responsive Display CSS, Minor Artworks and Font sizes updates */
+
+/*!* Extra small devices (phones, 600px and down) *!*/
+/*@media only screen and (max-width: 600px) {*/
+    /*.codingArtwork {*/
+        /*width: 12rem;*/
+        /*object-fit: contain;*/
+        /**/
+    /*}*/
+/*}*/
+
+/*!* Small devices (portrait tablets and large phones, 600px and up) *!*/
+/*@media only screen and (max-width: 600px) {*/
+    /*.codingArtwork {*/
+        /*width: 12rem;*/
+        /*object-fit: contain;*/
+    /*}*/
+/*}*/
+
+/*Medium devices (landscape tablets, 768px and down)*/
+@media only screen and (max-width: 768px) {
+    .codingArtwork {
+        width: 10rem;
+        height: 10rem;
+    }
+}

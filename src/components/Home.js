@@ -106,7 +106,7 @@ const Home = () => {
                                 <div>
                                     <h6>Professionally /</h6>
                                     <p>
-                                        I am more of a front-end developer because i believe the <span className={"strike"}>uncle</span>, Oh its the user that still matters the most.
+                                        I am more of a front-end developer, its a thing and i believe that the <span className={"strike"}>uncle</span>, Oh its the user that still matters the most.
                                         <br/>
                                         Currently working with React, React Native, PHP, JavaScript, HTML, CSS to solve <span className={"strike"}>some</span>, 
                                         <span className={"strike"}>all</span>, problems.

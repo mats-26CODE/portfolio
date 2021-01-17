@@ -50,29 +50,29 @@
     position: absolute;
     bottom: 1.8rem;
     left: 0.2rem;
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -ms-transition: all .5s;
-    -o-transition: all .5s;
-    transition: all .5s;
-    -webkit-transform: scale(.9);
-    -moz-transform: scale(.9);
-    -ms-transform: scale(.9);
-    -o-transform: scale(.9);
-    transform: scale(.9);
+    -webkit-animation: alternate 5s infinite beat;
+    -moz-animation: alternate 5s infinite beat;
+    -o-animation: alternate 5s infinite beat;
+    animation: alternate 5s infinite beat;
+    animation-delay: 1s;
 }
 
-.codingArtwork:hover {
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -ms-transition: all .5s;
-    -o-transition: all .5s;
-    transition: all .5s;
-    -webkit-transform: scale(.95);
-    -moz-transform: scale(.95);
-    -ms-transform: scale(.95);
-    -o-transform: scale(.95);
-    transform: scale(.95);
+
+@keyframes beat {
+    0%{
+        -webkit-transform: scale(.9);
+        -moz-transform: scale(.9);
+        -ms-transform: scale(.9);
+        -o-transform: scale(.9);
+        transform: scale(.9);
+    }
+    100% {
+        -webkit-transform: scale(.95);
+        -moz-transform: scale(.95);
+        -ms-transform: scale(.95);
+        -o-transform: scale(.95);
+        transform: scale(.95);
+    }
 }
 
 .landingIconsBox {
@@ -186,6 +186,7 @@
 .contact_box a {
     color: #c5c5c5;
     text-decoration: none;
+    text-decoration-color: #5554D7;
 }
 
 .mouseIcon,

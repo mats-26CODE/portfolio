@@ -14,7 +14,7 @@ const Portfolio = () => {
     
 
     return (
-        <div className={"potfolio_container"}>
+        <div className={"portfolio_container"}>
             <Grid container className={"project_arena"}>
                 <Grid item xs={12} sm={4} md={4} lg={4} xl={4} className={"project_box"}>
                     <div onClick={() => setWebAppVisible(true)}><h4>Web Apps /</h4></div>
