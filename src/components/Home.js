@@ -1,15 +1,19 @@
 import { Avatar, Grid } from '@material-ui/core';
 import React from 'react';
-import { IoChevronDownOutline, IoLogoFacebook, IoLogoGithub } from 'react-icons/io5';
+import { IoChevronDownOutline, IoLogoFacebook, IoLogoGithub, IoBrushSharp,IoPencilOutline } from 'react-icons/io5';
 import { AiFillTwitterCircle } from "react-icons/ai";
+import { CgMouse } from "react-icons/cg";
+import { GiFountainPen, GiEyedropper } from 'react-icons/gi';
+import { ImPencil } from 'react-icons/im';
 import './css/Home.css';
 import { makeStyles } from '@material-ui/core/styles';
-import { CgMouse } from "react-icons/cg";
+import { ReactComponent as CodingArtwork } from '../assets/images/coding.svg';
+
 
 //-> file import
 import dp from '../assets/images/dp.png';
 
-//-> cpomponent import
+//-> component import
 import Button from './common/Button';
 
 const useStyles = makeStyles((theme) => ({
@@ -78,6 +82,15 @@ const Home = () => {
                             </Grid>
                         </Grid>
                     </div>
+
+                    <CodingArtwork className={"codingArtwork"} />
+
+                    <div className={"landingIconsBox"}>
+                        <IoBrushSharp style={{color: "#0074bb", fontSize: '2rem' }}/>
+                        <GiFountainPen style={{color: "#008DD5", fontSize: '2rem' }}  />
+                        <ImPencil style={{color: "#0c69d5", fontSize: '2rem' }}/>
+                        <GiEyedropper style={{color: "#20EEEE", fontSize: '2rem' }} />
+                    </div>
                 </div>
             </Grid>
 
@@ -93,7 +106,7 @@ const Home = () => {
                                 <div>
                                     <h6>Professionally /</h6>
                                     <p>
-                                        I am more of a front-end developer because i believe the <span className={"strike"}>uncle</span>, Oh its the user that still matters the most.
+                                        I am more of a front-end developer, its a thing and i believe that the <span className={"strike"}>uncle</span>, Oh its the user that still matters the most.
                                         <br/>
                                         Currently working with React, React Native, PHP, JavaScript, HTML, CSS to solve <span className={"strike"}>some</span>, 
                                         <span className={"strike"}>all</span>, problems.
@@ -125,10 +138,10 @@ const Home = () => {
                             <h5>Don't just pass by, Say Hi !</h5>
                         </Grid>
 
-                        <Grid item xs={12} sm={12} md={12} lg={12} xl={12} style={{textAlign: 'center'}}>
-                            <a href='https://www.twitter.com/chmod_tz' target="_blank" rel="noreferrer noopener"><AiFillTwitterCircle color="#c5c5c5" size='2em'/></a>
-                            <a href='https://www.facebook.com/mat2694/' target="_blank" rel="noreferrer noopener"><IoLogoFacebook color="#c5c5c5" size='2em' /></a>
-                            <a href='https://www.github.com/mats-26CODE' target="_blank" rel="noreferrer noopener"><IoLogoGithub color="#c5c5c5" size='2em'/></a>
+                        <Grid item xs={12} sm={12} md={12} lg={12} xl={12} style={{textAlign: 'center'}} className={"socialIconsBox"}>
+                            <a href='https://www.twitter.com/chmod_tz' target="_blank" rel="noreferrer noopener"><AiFillTwitterCircle color="#c5c5c5" size='2em' className={"socialIcon"}/></a>
+                            <a href='https://www.facebook.com/mat2694/' target="_blank" rel="noreferrer noopener"><IoLogoFacebook color="#c5c5c5" size='2em' className={"socialIcon"}/></a>
+                            <a href='https://www.github.com/mats-26CODE' target="_blank" rel="noreferrer noopener"><IoLogoGithub color="#c5c5c5" size='2em'className={"socialIcon"}/></a>
                         </Grid>
 
                         <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>

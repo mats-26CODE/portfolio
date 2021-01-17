@@ -24,13 +24,14 @@ const useStyles = makeStyles((theme) => ({
     avatar: {
       textDecoration: 'none',
       fontFamily: 'Ubuntu, sans-serif',
-      backgroundColor: '#1b5dc0',
-      color: '#c5c5c5'
+      backgroundColor: '#2A2ACC',
+      color: '#c5c5c5',
+      border: '0.15rem solid #5554D7',
     },
     navLink: {
       fontSize: '1.6rem',
       fontFamily: 'freestyleScript, sans-serif',
-      textDecoration: 'underline',
+      textDecoration: 'underline #5554D7',
       fontWeight: 'normal',
       margin: '1rem',
       color: '#c5c5c5',
@@ -41,6 +42,9 @@ const useStyles = makeStyles((theme) => ({
         webkitTransition: 'all .5s',
         textDecoration: 'none',
       },
+    },
+    aboutLink: {
+        textDecorationColor: '#5554D7',
     },
     linksBox: {
       display: 'flex',
@@ -61,7 +65,7 @@ const NavBar = () => {
 
           <div className={classes.linksBox}>
             <Typography variant="h6" className={classes.navLink}>
-              <span className={"about"}><a href="#about">About</a></span>
+              <span className={"about"}><a href="#about" className={classes.aboutLink}>About</a></span>
             </Typography>
 
             <Typography variant="h6" className={classes.navLink} component={Link} to="/portfolio">
