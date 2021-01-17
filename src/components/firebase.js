@@ -1,11 +1,11 @@
 import firebase from 'firebase';
 
 const firebaseApp = firebase.initializeApp({
-    apiKey: "AIzaSyCOJAkxdtKpk2li7AAVHj9bgtl9vhXEq6k",
-    authDomain: "maiportfolio.firebaseapp.com",
-    projectId: "maiportfolio",
-    storageBucket: "maiportfolio.appspot.com",
-    messagingSenderId: "791909361901",
-    appId: "1:791909361901:web:45d79560aedd37329d84e4",
-    measurementId: "G-XLFWC69WRQ"
+    apiKey: "AIzaSyCLWhHqAmsA3RY6qRD_W7ERE3DrW-ekz34",
+    authDomain: "matmaendeleo.firebaseapp.com",
+    projectId: "matmaendeleo",
+    storageBucket: "matmaendeleo.appspot.com",
+    messagingSenderId: "305345359623",
+    appId: "1:305345359623:web:39469a04613af2c7a09fa2",
+    measurementId: "G-6XMBJL1KSY"
 });
