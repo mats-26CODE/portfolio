@@ -120,7 +120,6 @@ footer > div h6 {
 }
 
 
-<<<<<<< HEAD
 ::-webkit-scrollbar {
   width: 9px;
 }
@@ -137,7 +136,7 @@ footer > div h6 {
   box-shadow: inset 0 0 6px rgba(2, 56, 138, 0.5);
   -webkit-box-shadow: inset 0 0 6px rgba(0, 5, 34, 0.5); 
 }
-=======
+
 /*-----Responsive Display CSS, Minor Artworks and Font sizes updates */
 
 /*!* Extra small devices (phones, 600px and down) *!*/
@@ -164,4 +163,3 @@ footer > div h6 {
         height: 10rem;
     }
 }
->>>>>>> 1f08685eb5911feca4c904de2d2c4b0c144c5438

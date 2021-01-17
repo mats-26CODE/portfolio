@@ -48,8 +48,8 @@
 
 .codingArtwork {
     position: absolute;
-    bottom: 1.8rem;
-    left: 0.2rem;
+    bottom: 1.5rem;
+    left: 0.05rem;
     -webkit-animation: alternate 5s infinite beat;
     -moz-animation: alternate 5s infinite beat;
     -o-animation: alternate 5s infinite beat;
@@ -60,11 +60,11 @@
 
 @keyframes beat {
     0%{
-        -webkit-transform: scale(.9);
-        -moz-transform: scale(.9);
-        -ms-transform: scale(.9);
-        -o-transform: scale(.9);
-        transform: scale(.9);
+        -webkit-transform: scale(.85);
+        -moz-transform: scale(.85);
+        -ms-transform: scale(.85);
+        -o-transform: scale(.85);
+        transform: scale(.85);
     }
     100% {
         -webkit-transform: scale(.95);
