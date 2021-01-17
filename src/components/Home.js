@@ -1,16 +1,19 @@
 import { Avatar, Grid } from '@material-ui/core';
 import React from 'react';
-import { ReactComponent as codingArtwork } from '../assets/images/coding.svg';
-import { IoChevronDownOutline, IoLogoFacebook, IoLogoGithub } from 'react-icons/io5';
+import { IoChevronDownOutline, IoLogoFacebook, IoLogoGithub, IoBrushSharp,IoPencilOutline } from 'react-icons/io5';
 import { AiFillTwitterCircle } from "react-icons/ai";
+import { CgMouse } from "react-icons/cg";
+import { GiFountainPen, GiEyedropper } from 'react-icons/gi';
+import { ImPencil } from 'react-icons/im';
 import './css/Home.css';
 import { makeStyles } from '@material-ui/core/styles';
-import { CgMouse } from "react-icons/cg";
+import { ReactComponent as CodingArtwork } from '../assets/images/coding.svg';
+
 
 //-> file import
 import dp from '../assets/images/dp.png';
 
-//-> cpomponent import
+//-> component import
 import Button from './common/Button';
 
 const useStyles = makeStyles((theme) => ({
@@ -80,7 +83,14 @@ const Home = () => {
                         </Grid>
                     </div>
 
-                    <codingArtwork />
+                    <CodingArtwork className={"codingArtwork"} />
+
+                    <div className={"landingIconsBox"}>
+                        <IoBrushSharp style={{color: "#0074bb", fontSize: '2rem' }}/>
+                        <GiFountainPen style={{color: "#008DD5", fontSize: '2rem' }}  />
+                        <ImPencil style={{color: "#0c69d5", fontSize: '2rem' }}/>
+                        <GiEyedropper style={{color: "#20EEEE", fontSize: '2rem' }} />
+                    </div>
                 </div>
             </Grid>
 

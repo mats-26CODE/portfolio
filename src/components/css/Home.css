@@ -38,11 +38,47 @@
 }
 
 .landing_box {
+    position: relative;
     width: 100%;
     background-color: #1c1c1c;
     display: grid;
     place-items: center;
     z-index: 1;
+}
+
+.codingArtwork {
+    position: absolute;
+    bottom: 1.8rem;
+    left: 0.2rem;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    -webkit-transform: scale(.9);
+    -moz-transform: scale(.9);
+    -ms-transform: scale(.9);
+    -o-transform: scale(.9);
+    transform: scale(.9);
+}
+
+.codingArtwork:hover {
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+    -webkit-transform: scale(.95);
+    -moz-transform: scale(.95);
+    -ms-transform: scale(.95);
+    -o-transform: scale(.95);
+    transform: scale(.95);
+}
+
+.landingIconsBox {
+    position: absolute;
+    bottom: 4rem;
+    right: 1rem;
 }
 
 .landing_dp {
