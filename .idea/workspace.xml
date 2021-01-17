@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="842ff0dd-de0a-436f-a3c4-8aa68d2639db" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="842ff0dd-de0a-436f-a3c4-8aa68d2639db" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -108,8 +106,8 @@
       <file leaf-file-name="Home.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/css/Home.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="29" column="29" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="29" />
+            <state relative-caret-position="-25">
+              <caret line="25" column="29" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -258,12 +256,12 @@
       <updated>1610874571401</updated>
       <workItem from="1610874572574" duration="17275000" />
       <workItem from="1610911298461" duration="711000" />
-      <workItem from="1610914236656" duration="5250000" />
+      <workItem from="1610914236656" duration="5487000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23236000" />
+    <option name="totallyTimeSpent" value="23473000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -540,8 +538,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/css/Home.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="29" column="29" selection-start-line="29" selection-start-column="23" selection-end-line="29" selection-end-column="29" />
+        <state relative-caret-position="-25">
+          <caret line="25" column="29" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="29" />
         </state>
       </provider>
     </entry>
