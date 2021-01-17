@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Grid } from '@material-ui/core';
 import './css/Portfolio.css';
+import  WebApps  from './portfolioComponents/WebApps';
 
 
 //-> component imports
@@ -31,7 +32,7 @@ const Portfolio = () => {
 
             { webAppVisible && 
                 (<Modal closeModal={() => setWebAppVisible(false)}> 
-                    <p>The content of the modal 1</p>
+                    <WebApps />
                 </Modal>
                 )
             }

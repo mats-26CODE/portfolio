@@ -8,22 +8,23 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #1c1c1c;
+    background-color: #444444;
     z-index: 999; 
     cursor: pointer;
 }
 
 .modal_body {
     margin: 15% auto;
-    background-color: white;
+    background: rgb(28,28,28);
+    background: linear-gradient(60deg, rgba(28,28,28,1) 0%, rgba(5,34,82,1) 100%);
     border-radius: 0.25rem;
-    width: 50vw;
-    padding: 2rem;
+    width: 80vw;
+    padding: 2.5rem;
     position: relative;
 }
 
 .modal_close_icon {
-    color: #1b5dc0;
+    color: #2770df;
     padding: 10px;
     font-size: 1.5rem;
     background-color: transparent;
