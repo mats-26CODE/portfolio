@@ -67,11 +67,11 @@
         transform: scale(.85);
     }
     100% {
-        -webkit-transform: scale(.95);
-        -moz-transform: scale(.95);
-        -ms-transform: scale(.95);
-        -o-transform: scale(.95);
-        transform: scale(.95);
+        -webkit-transform: scale(.9);
+        -moz-transform: scale(.9);
+        -ms-transform: scale(.9);
+        -o-transform: scale(.9);
+        transform: scale(.9);
     }
 }
 

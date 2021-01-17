@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { Grid } from '@material-ui/core';
 import './css/Portfolio.css';
-import  WebApps  from './portfolioComponents/WebApps';
-
 
 //-> component imports
 import Modal from './common/Modal';
+import  WebApps  from './portfolioComponents/WebApps';
+import  MobileApps  from './portfolioComponents/MobileApps';
+import  UiUx  from './portfolioComponents/UiUx';
+
 
 const Portfolio = () => {
 
@@ -39,14 +41,14 @@ const Portfolio = () => {
 
             { mobAppVisible && 
                 (<Modal closeModal={() => setMobAppVisible(false)}> 
-                    <p>The content of the modal 2</p>
+                   <MobileApps />
                 </Modal>
                 )
             }
 
             { uiuxVisible && 
                 (<Modal closeModal={() => setUiUxVisible(false)}> 
-                    <p>The content of the modal 3</p>
+                    <UiUx />
                 </Modal>
                 )
             }
