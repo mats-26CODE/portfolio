@@ -6,6 +6,7 @@ import Avatar from '@material-ui/core/Avatar';
 import { Link } from 'react-router-dom';
 import { Typography } from '@material-ui/core';
 import { FaFan } from "react-icons/fa";
+import { Link as ScrollLink } from 'react-scroll';
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -23,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
     },
     avatar: {
       textDecoration: 'none',
-      fontFamily: 'Ubuntu, sans-serif',
+      fontFamily: 'Nunito-bold, sans-serif',
       backgroundColor: '#2A2ACC',
       color: '#c5c5c5',
       border: '0.15rem solid #5554D7',
@@ -65,7 +66,11 @@ const NavBar = () => {
 
           <div className={classes.linksBox}>
             <Typography variant="h6" className={classes.navLink}>
-              <span className={"about"}><a href="#boxTwo" className={classes.aboutLink}>About</a></span>
+              <span className={"about"}>
+                  <ScrollLink activeClass="active" to="scrollBoxTwo" spy={true} smooth={true} duration={1000} className={classes.aboutLink}>
+                      About
+                  </ScrollLink>
+              </span>
             </Typography>
 
             <Typography variant="h6" className={classes.navLink} component={Link} to="/portfolio">

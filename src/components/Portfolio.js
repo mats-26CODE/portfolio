@@ -3,6 +3,7 @@ import { Grid } from '@material-ui/core';
 import './css/Portfolio.css';
 
 //-> component imports
+import PortfolioNavBar from './portfolioComponents/PortfolioNavBar';
 import Modal from './common/Modal';
 import  WebApps  from './portfolioComponents/WebApps';
 import  MobileApps  from './portfolioComponents/MobileApps';
@@ -16,44 +17,51 @@ const Portfolio = () => {
     
 
     return (
-        <div className={"portfolio_container"}>
+        <div>
             <div>
-                <Grid container className={"project_arena"}>
-                    <Grid item xs={12} sm={4} md={4} lg={4} xl={4} className={"project_box"}>
-                        <div onClick={() => setWebAppVisible(true)}><h4>Web Apps /</h4></div>
-                    </Grid>
-
-                    <Grid item xs={12} sm={4} md={4} lg={4} xl={4} className={"project_box"}>
-                        <div onClick={() => setMobAppVisible(true)}><h4>Mobile Apps /</h4></div>
-                    </Grid>
-
-                    <Grid item xs={12} sm={4} md={4} lg={4} xl={4} className={"project_box"}>
-                        <div onClick={() => setUiUxVisible(true)}><h4>UI/UX /</h4></div>
-                    </Grid>
-                </Grid>
+                <PortfolioNavBar />
             </div>
 
-            { webAppVisible && 
-                (<Modal closeModal={() => setWebAppVisible(false)}> 
-                    <WebApps />
-                </Modal>
-                )
-            }
+            <div className={"portfolio_container"}>
 
-            { mobAppVisible && 
-                (<Modal closeModal={() => setMobAppVisible(false)}> 
-                   <MobileApps />
-                </Modal>
-                )
-            }
+                <div>
+                    <Grid container className={"project_arena"}>
+                        <Grid item xs={12} sm={4} md={4} lg={4} xl={4} className={"project_box"}>
+                            <div onClick={() => setWebAppVisible(true)}><h4>Web Apps /</h4></div>
+                        </Grid>
 
-            { uiuxVisible && 
-                (<Modal closeModal={() => setUiUxVisible(false)}> 
-                    <UiUx />
-                </Modal>
-                )
-            }
-        </div> 
+                        <Grid item xs={12} sm={4} md={4} lg={4} xl={4} className={"project_box"}>
+                            <div onClick={() => setMobAppVisible(true)}><h4>Mobile Apps /</h4></div>
+                        </Grid>
+
+                        <Grid item xs={12} sm={4} md={4} lg={4} xl={4} className={"project_box"}>
+                            <div onClick={() => setUiUxVisible(true)}><h4>UI/UX /</h4></div>
+                        </Grid>
+                    </Grid>
+                </div>
+
+                { webAppVisible &&
+                    (<Modal closeModal={() => setWebAppVisible(false)}>
+                        <WebApps />
+                    </Modal>
+                    )
+                }
+
+                { mobAppVisible &&
+                    (<Modal closeModal={() => setMobAppVisible(false)}>
+                       <MobileApps />
+                    </Modal>
+                    )
+                }
+
+                { uiuxVisible &&
+                    (<Modal closeModal={() => setUiUxVisible(false)}>
+                        <UiUx />
+                    </Modal>
+                    )
+                }
+            </div>
+        </div>
     )
 }
 

@@ -16,6 +16,7 @@ import dp from '../assets/images/dp.png';
 
 //-> component import
 import Button from './common/Button';
+import NavBar from './NavBar';
 
 const useStyles = makeStyles((theme) => ({
     large: {
@@ -31,6 +32,10 @@ const Home = () => {
 
     return (
         <div className={"home_container"}>
+            <div>
+                <NavBar />
+            </div>
+
             <Grid container className={"scrollBox"}>
                 <div className={"landing_box"} id={"boxOne"}>
                     <div>
@@ -69,18 +74,21 @@ const Home = () => {
                                 </div>
                             </Grid>
                             <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-                                <div 
-                                    style={{
-                                        display: 'flex', 
-                                        flexDirection: 'column',
-                                        alignItems: 'center', 
-                                        justifyContent: 'center',
-                                        marginTop: '1rem',
-                                    }}
-                                >
-
-                                        <CgMouse className={"mouseIcon"} />
-                                        <IoChevronDownOutline className={"chevronIcon"} />
+                                <div>
+                                    <ScrollLink activeClass="active" to="scrollBoxTwo" spy={true} smooth={true} duration={1000}>
+                                        <div
+                                            style={{
+                                                display: 'flex',
+                                                flexDirection: 'column',
+                                                alignItems: 'center',
+                                                justifyContent: 'center',
+                                                marginTop: '1rem',
+                                            }}
+                                        >
+                                            <CgMouse className={"mouseIcon"} />
+                                            <IoChevronDownOutline className={"chevronIcon"} />
+                                        </div>
+                                    </ScrollLink>
                                 </div>
                             </Grid>
                         </Grid>
@@ -97,11 +105,14 @@ const Home = () => {
                 </div>
             </Grid>
 
-            <Grid container className={"scrollBox"}>
+            <Grid container className={"scrollBox"} id={"scrollBoxTwo"}>
                 <div className={"aboutBox"}>
                     <Grid container>
                         <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
                             <h5>My life /</h5>
+                            <div className={"aboutNickNameBox"}>
+                                <h4>Call me <br/> <span className={"mtNickName"}>MT.</span></h4>
+                            </div>
                         </Grid>
 
                         <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>

@@ -22,7 +22,7 @@
     }
 }
 
-.home_container > div:nth-child(2) {
+.home_container > div:nth-child(3) {
     background-color: #2A2ACC;
 }
 
@@ -32,7 +32,7 @@
 
 .scrollBox {
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     /*scroll-snap-align: start;*/
 }
@@ -135,6 +135,12 @@
     color: #008DD5;
     text-align: center;
     font-weight: normal;
+
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
 }
 
 .landing_info_box > div:last-child h6 {
@@ -143,6 +149,38 @@
     color: #20eeee;
     font-weight: normal;
     text-align: center;
+
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+
+.landing_info_box > div:nth-child(2) h5:hover {
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    -webkit-transform: translateX(5px);
+    -moz-transform: translateX(5px);
+    -ms-transform: translateX(5px);
+    -o-transform: translateX(5px);
+    transform: translateX(5px);
+}
+
+.landing_info_box > div:last-child h6:hover {
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    -webkit-transform: translateX(-5px);
+    -moz-transform: translateX(-5px);
+    -ms-transform: translateX(-5px);
+    -o-transform: translateX(-5px);
+    transform: translateX(-5px);
 }
 
 /*  blinking vertical Line */
@@ -227,6 +265,11 @@
     }
 }
 
+.mouseIcon:hover,
+.chevronIcon:hover {
+    cursor: pointer;
+}
+
 .strike {
     text-decoration: line-through;
 }
@@ -243,6 +286,25 @@
     font-size: 3rem;
     color: #c5c5c5;
     text-align: center;
+
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+
+.aboutBox h5:hover {
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    -webkit-transform: translateX(-10px);
+    -moz-transform: translateX(-10px);
+    -ms-transform: translateX(-10px);
+    -o-transform: translateX(-10px);
+    transform: translateX(-10px);
 }
 
 .aboutBox h6 {
@@ -250,13 +312,89 @@
     font-size: 1.6rem;
     color: #c5c5c5;
     margin: 0.8rem 0 0.8rem 0;
+
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+
+.aboutBox h6:hover {
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    -webkit-transform: translateX(5px);
+    -moz-transform: translateX(5px);
+    -ms-transform: translateX(5px);
+    -o-transform: translateX(5px);
+    transform: translateX(5px);
 }
 
 .aboutBox p {
     font-family: Poppins-regular, sans-serif;
-    font-size: 1rem;
+    font-size: 1.05rem;
     color: #c5c5c5;
     margin: 0.5rem 0 0.5rem 0;
+
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+
+.aboutBox p:hover {
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    -webkit-transform: translateX(-10px);
+    -moz-transform: translateX(-10px);
+    -ms-transform: translateX(-10px);
+    -o-transform: translateX(-10px);
+    transform: translateX(-10px);
+}
+
+.aboutNickNameBox {
+    width: 30%;
+    height: 35%;
+    margin: 0 auto;
+    padding: 2rem;
+    border: 3rem solid #2828aa;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+
+.aboutNickNameBox h4 {
+    font-family: Nunito-bold, sans-serif;
+    font-size: 2rem;
+    color: #c5c5c5;
+    text-align: center;
+}
+
+.mtNickName {
+    font-family: Nunito-bold, sans-serif;
+    font-size: 3rem;
+}
+
+.aboutNickNameBox:hover {
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    -webkit-transform: translateX(10px);
+    -moz-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    -o-transform: translateX(10px);
+    transform: translateX(10px);
 }
 
 .workText {
@@ -287,10 +425,29 @@
 
 .socialBox h5 {
     font-family: freeStyleScript, sans-serif;
-    font-size: 3.2rem;
+    font-size: 4.2rem;
     color: #c5c5c5;
     font-weight: normal;
     text-align: center;
+
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+
+.socialBox h5:hover {
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+    -webkit-transform: translateX(-10px);
+    -moz-transform: translateX(-10px);
+    -ms-transform: translateX(-10px);
+    -o-transform: translateX(-10px);
+    transform: translateX(-10px);
 }
 
 
