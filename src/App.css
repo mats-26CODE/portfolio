@@ -52,7 +52,8 @@
 }
 
 html {
-  scroll-snap-align: y mandatory;
+  /*scroll-snap-align: y mandatory;*/
+  scroll-behavior: smooth;
 }
 
 .App {
@@ -61,7 +62,7 @@ html {
 }
 
 footer {
-  background-color: #008DD5;
+  background-color: #3131f3;
   padding: 0.2rem;
 }
 
@@ -119,7 +120,7 @@ footer > div h6 {
   opacity: .9;
 }
 
-
+/*customized browser scroll bar*/
 ::-webkit-scrollbar {
   width: 9px;
 }
@@ -159,7 +160,8 @@ footer > div h6 {
 /*Medium devices (landscape tablets, 768px and down)*/
 @media only screen and (max-width: 768px) {
     .codingArtwork {
-        width: 10rem;
-        height: 10rem;
+        width: 15rem;
+        height: 6rem;
+        opacity: 0.5;
     }
 }

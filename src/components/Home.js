@@ -1,5 +1,5 @@
+import React, { useRef } from 'react';
 import { Avatar, Grid } from '@material-ui/core';
-import React from 'react';
 import { IoChevronDownOutline, IoLogoFacebook, IoLogoGithub, IoBrushSharp,IoPencilOutline } from 'react-icons/io5';
 import { AiFillTwitterCircle } from "react-icons/ai";
 import { CgMouse } from "react-icons/cg";
@@ -8,6 +8,7 @@ import { ImPencil } from 'react-icons/im';
 import './css/Home.css';
 import { makeStyles } from '@material-ui/core/styles';
 import { ReactComponent as CodingArtwork } from '../assets/images/coding.svg';
+import { Link as ScrollLink } from 'react-scroll';
 
 
 //-> file import
@@ -26,11 +27,12 @@ const useStyles = makeStyles((theme) => ({
 
 const Home = () => {
     const classes = useStyles();
-    
+    const myRef = useRef(null);
+
     return (
         <div className={"home_container"}>
             <Grid container className={"scrollBox"}>
-                <div className={"landing_box"}>
+                <div className={"landing_box"} id={"boxOne"}>
                     <div>
                         <Grid container className={"landing_info_box"}>
                             <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
@@ -70,14 +72,15 @@ const Home = () => {
                                 <div 
                                     style={{
                                         display: 'flex', 
-                                        flexDirection: 'column', 
+                                        flexDirection: 'column',
                                         alignItems: 'center', 
                                         justifyContent: 'center',
                                         marginTop: '1rem',
                                     }}
                                 >
-                                    <CgMouse className={"mouseIcon"} />
-                                    <IoChevronDownOutline className={"chevronIcon"} />
+
+                                        <CgMouse className={"mouseIcon"} />
+                                        <IoChevronDownOutline className={"chevronIcon"} />
                                 </div>
                             </Grid>
                         </Grid>
@@ -94,7 +97,7 @@ const Home = () => {
                 </div>
             </Grid>
 
-            <Grid container className={"scrollBox"} id={"about"}>
+            <Grid container className={"scrollBox"}>
                 <div className={"aboutBox"}>
                     <Grid container>
                         <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
@@ -132,7 +135,7 @@ const Home = () => {
             </Grid>
 
             <Grid container className={"scrollBox socialHookUp"}>
-                <div className={"socialBox"}>
+                <div className={"socialBox"} id={"boxThree"}>
                     <Grid container>
                         <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
                             <h5>Don't just pass by, Say Hi !</h5>

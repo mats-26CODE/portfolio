@@ -65,7 +65,7 @@ const NavBar = () => {
 
           <div className={classes.linksBox}>
             <Typography variant="h6" className={classes.navLink}>
-              <span className={"about"}><a href="#about" className={classes.aboutLink}>About</a></span>
+              <span className={"about"}><a href="#boxTwo" className={classes.aboutLink}>About</a></span>
             </Typography>
 
             <Typography variant="h6" className={classes.navLink} component={Link} to="/portfolio">
