@@ -11,11 +11,11 @@ import { Link as ScrollLink } from 'react-scroll';
 const useStyles = makeStyles((theme) => ({
     root: {
       flexGrow: 1,
-      zIndex: -5
+      zIndex: 1000,
     },
     app_bar: {
       backgroundColor: '#161616',
-      height: '10vh',
+      height: '9vh',
     },
     toolBar: {
       display: 'flex',
