@@ -150,7 +150,7 @@ const Home = () => {
                         </Grid>
 
                         <Grid item xs={12} sm={12} md={12} lg={12} xl={12} style={{textAlign: 'center'}} className={"socialIconsBox"}>
-                            <a href='https://www.twitter.com/chmod_tz' target="_blank" rel="noreferrer noopener"><AiFillTwitterCircle color="#c5c5c5" size='2em' className={"socialIcon"}/></a>
+                            <a href='https://www.twitter.com/matmaendeleo' target="_blank" rel="noreferrer noopener"><AiFillTwitterCircle color="#c5c5c5" size='2em' className={"socialIcon"}/></a>
                             <a href='https://www.facebook.com/mat2694/' target="_blank" rel="noreferrer noopener"><IoLogoFacebook color="#c5c5c5" size='2em' className={"socialIcon"}/></a>
                             <a href='https://www.github.com/mats-26CODE' target="_blank" rel="noreferrer noopener"><IoLogoGithub color="#c5c5c5" size='2em'className={"socialIcon"}/></a>
                         </Grid>
