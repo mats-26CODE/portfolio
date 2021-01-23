@@ -67,9 +67,9 @@ const NavBar = () => {
           <div className={classes.linksBox}>
             <Typography variant="h6" className={classes.navLink}>
               <span className={"about"}>
-                  <ScrollLink activeClass="active" to="scrollBoxTwo" spy={true} smooth={true} duration={1000} className={classes.aboutLink}>
+                  <a href="#scrollBoxTwo" className={classes.aboutLink}>
                       About
-                  </ScrollLink>
+                  </a>
               </span>
             </Typography>
 
