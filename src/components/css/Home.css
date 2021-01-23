@@ -1,28 +1,22 @@
 .home_container {
-    min-height: 100vh;
-    position: relative;
-    overflow: initial;
-    /*scroll-snap-type: y mandatory;*/
+    scroll-snap-type: y mandatory;
+    height: 100vh;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
 }
 
-/* Hide scrollbar for Chrome, Safari and Opera Mini */
-.home_container::-webkit-scrollbar {
-    display: none;
+
+/*@media (prefers-reduced-motion: no-preference) {*/
+    /*.App-logo {*/
+        /*animation: App-logo-spin infinite 20s linear;*/
+    /*}*/
+/*}*/
+
+.home_container > div:first-child {
+    background-color: #1c1c1c;
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
-.home_container {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /*Firefox */
-}
-
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
-}
-
-.home_container > div:nth-child(3) {
+.home_container > div:nth-child(2) {
     background-color: #2A2ACC;
 }
 
@@ -32,9 +26,10 @@
 
 .scrollBox {
     position: relative;
-    min-height: 100vh;
+    height: 100vh;
     width: 100%;
-    /*scroll-snap-align: start;*/
+    scroll-snap-align: start;
+    overflow: hidden;
 }
 
 .landing_box {

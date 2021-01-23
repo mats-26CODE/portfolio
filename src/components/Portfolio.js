@@ -4,6 +4,7 @@ import './css/Portfolio.css';
 
 //-> component imports
 import PortfolioNavBar from './portfolioComponents/PortfolioNavBar';
+import Footer from './Footer';
 import Modal from './common/Modal';
 import  WebApps  from './portfolioComponents/WebApps';
 import  MobileApps  from './portfolioComponents/MobileApps';
@@ -17,13 +18,12 @@ const Portfolio = () => {
     
 
     return (
-        <div>
+        <div className={"portfolio_box"}>
             <div>
                 <PortfolioNavBar />
             </div>
 
             <div className={"portfolio_container"}>
-
                 <div>
                     <Grid container className={"project_arena"}>
                         <Grid item xs={12} sm={4} md={4} lg={4} xl={4} className={"project_box"}>
@@ -61,6 +61,8 @@ const Portfolio = () => {
                     )
                 }
             </div>
+
+            <Footer />
         </div>
     )
 }

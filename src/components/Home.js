@@ -10,13 +10,13 @@ import { makeStyles } from '@material-ui/core/styles';
 import { ReactComponent as CodingArtwork } from '../assets/images/coding.svg';
 import { Link as ScrollLink } from 'react-scroll';
 
-
 //-> file import
 import dp from '../assets/images/dp.png';
 
 //-> component import
 import Button from './common/Button';
 import NavBar from './NavBar';
+import Footer from './Footer';
 
 const useStyles = makeStyles((theme) => ({
     large: {
@@ -32,11 +32,8 @@ const Home = () => {
 
     return (
         <div className={"home_container"}>
-            <div>
-                <NavBar />
-            </div>
-
             <Grid container className={"scrollBox"}>
+                <NavBar />
                 <div className={"landing_box"} id={"boxOne"}>
                     <div>
                         <Grid container className={"landing_info_box"}>
@@ -167,6 +164,7 @@ const Home = () => {
                         </Grid>
                     </Grid>
                 </div>
+                <Footer />
             </Grid>
         </div>
     )
