@@ -45,12 +45,6 @@
   src: url('./assets/fonts/Poppins-Medium.ttf');
 }
 
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
 html {
   /*scroll-snap-align: y mandatory;*/
   scroll-behavior: smooth;
@@ -121,7 +115,7 @@ footer > div h6 {
 
 /*customized browser scroll bar*/
 ::-webkit-scrollbar {
-  width: 9px;
+  width: 3px;
 }
 
 ::-webkit-scrollbar-track {

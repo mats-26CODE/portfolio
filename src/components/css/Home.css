@@ -41,6 +41,33 @@
     z-index: 1;
 }
 
+#triangle-bottomleft {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 100px solid #252525;
+    border-right: 100px solid transparent;
+}
+
+#triangle-bottomright {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 100px solid #252525;
+    border-left: 100px solid transparent;
+}
+
+#landing_icons {
+    position: absolute;
+    top: -20%; 
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+
 .codingArtwork {
     position: absolute;
     bottom: 2.5rem;
@@ -119,6 +146,10 @@
       background-position: 100% 50%;
     }
 }
+
+/* .landing_info_box {
+    z-index: 1000;
+} */
 
 .landing_info_box > div:nth-child(2) {
     padding-top: 1rem;

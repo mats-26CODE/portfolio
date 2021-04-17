@@ -1,6 +1,22 @@
+* {
+  margin: 0;
+}
+
+@font-face{
+  font-family: 'freestyleScript';
+  src: local('freestyleScript'), url('./assets/fonts/freeStyleScript.ttf') format('true');
+  font-weight: normal;
+}
+
+@font-face{
+  font-family: 'Poppins-regular';
+  src: local('Poppins-regular'), url('./assets/fonts/Poppins-Regular.ttf') format('true');
+  font-weight: normal;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'freestyleScript', 'Poppins-regular', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;

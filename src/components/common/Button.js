@@ -11,6 +11,6 @@ const Button = ({text, onClick, variant, startIcon, href}) => {
             <a href={href}>{text}</a>
         </Btn> 
     )
-}
+};
 
 export default Button;

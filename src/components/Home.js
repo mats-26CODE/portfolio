@@ -1,14 +1,28 @@
 import React, { useRef } from 'react';
 import { Avatar, Grid } from '@material-ui/core';
-import { IoChevronDownOutline, IoLogoFacebook, IoLogoGithub, IoBrushSharp,IoPencilOutline } from 'react-icons/io5';
-import { AiFillTwitterCircle } from "react-icons/ai";
-import { CgMouse } from "react-icons/cg";
-import { GiFountainPen, GiEyedropper } from 'react-icons/gi';
-import { ImPencil } from 'react-icons/im';
 import './css/Home.css';
 import { makeStyles } from '@material-ui/core/styles';
 import { ReactComponent as CodingArtwork } from '../assets/images/coding.svg';
 import { Link as ScrollLink } from 'react-scroll';
+
+//-> react icon imports
+import { 
+    IoChevronDownOutline, 
+    IoLogoFacebook, 
+    IoLogoGithub, 
+    IoBrushSharp, 
+    IoFootball, 
+    IoVideocamOutline,
+    IoGameController,
+    IoLogoReact,
+    IoLogoJavascript,
+    IoLogoHtml5,
+ } from 'react-icons/io5';
+import { AiFillTwitterCircle } from "react-icons/ai";
+import { CgMouse } from "react-icons/cg";
+import { GiFountainPen, GiEyedropper } from 'react-icons/gi';
+import { ImPencil } from 'react-icons/im';
+import { DiPhp, DiCss3 } from "react-icons/di";
 
 //-> file import
 import dp from '../assets/images/dp.png';
@@ -17,6 +31,7 @@ import dp from '../assets/images/dp.png';
 import Button from './common/Button';
 import NavBar from './NavBar';
 import Footer from './Footer';
+import GooTrail from './common/GooTrail';
 
 const useStyles = makeStyles((theme) => ({
     large: {
@@ -24,7 +39,6 @@ const useStyles = makeStyles((theme) => ({
       height: theme.spacing(12),
     },
 }));
-
 
 const Home = () => {
     const classes = useStyles();
@@ -99,6 +113,17 @@ const Home = () => {
                         <ImPencil style={{color: "#0c69d5", fontSize: '2rem' }}/>
                         <GiEyedropper style={{color: "#20EEEE", fontSize: '2rem' }} />
                     </div>
+
+                    <div id={'triangle-bottomleft'}></div>
+                    <div id={'triangle-bottomright'}></div>
+                    <div id={'landing_icons'}>
+                        <IoVideocamOutline size={'2em'} color={'#353535'} />
+                        <IoFootball size={'2.5em'} color={'#353535'} />
+                        <IoGameController size={'2em'} color={'#353535'} />
+                    </div>
+                    {/* trailing bubble */}
+                    <GooTrail />
+                    {/* --------------- */}
                 </div>
             </Grid>
 
@@ -119,7 +144,7 @@ const Home = () => {
                                     <p>
                                         I am more of a front-end developer, its a thing and i believe that the <span className={"strike"}>uncle</span>, Oh its the user that still matters the most.
                                         <br/>
-                                        Currently working with React, React Native, PHP, JavaScript, HTML, CSS to solve <span className={"strike"}>some</span>, 
+                                        Currently working with <IoLogoReact color={'#20eeee'}/> React + React Native, <DiPhp color={'#7477AE'} /> PHP, <IoLogoJavascript color={'#EFD819'} /> JavaScript, <IoLogoHtml5 color={'#DD4B25'} /> HTML, <DiCss3 color={'#244CDD'} /> CSS to solve <span className={"strike"}>some</span>, 
                                         <span className={"strike"}>all</span>, problems.
                                         <br/>
                                         I enjoy UI/UX designing, to be honest i am not marvel, but I can make your app's UI/UX fly like superman!
@@ -140,6 +165,9 @@ const Home = () => {
                         </Grid>
                     </Grid>
                 </div>
+                {/* trailing bubble */}
+                <GooTrail />
+                {/* --------------- */}
             </Grid>
 
             <Grid container className={"scrollBox socialHookUp"}>
@@ -164,6 +192,9 @@ const Home = () => {
                         </Grid>
                     </Grid>
                 </div>
+                {/* trailing bubble */}
+                <GooTrail />
+                {/* --------------- */}
                 <Footer />
             </Grid>
         </div>
