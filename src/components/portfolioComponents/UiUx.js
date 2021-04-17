@@ -22,7 +22,7 @@ const UiUx = () => {
         >
 
             <div className={"slider_box_divider"}>
-                <GiHummingbird style={{color: '#1a84cc', fontSize: '12rem'}} />
+                <GiHummingbird style={{color: '#1a84cc', fontSize: '8rem'}} />
                 <h4>Check out on <span className={"strike"}> all</span> some of my designs <a href="https://dribbble.com/mat__ayo" target="_blank" rel="noreferrer noopener">here </a> <span className={"blinkingVL"}> /</span></h4>
             </div>
 
