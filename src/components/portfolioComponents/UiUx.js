@@ -2,7 +2,9 @@ import React from 'react';
 import AwesomeSlider from "react-awesome-slider";
 import CoreStyles from 'react-awesome-slider/src/core/styles.scss'
 import AwesomeSliderStyles from 'react-awesome-slider/src/styled/fall-animation/fall-animation.scss';
-import { IoHourglassOutline } from 'react-icons/io5';
+
+//-> react icons import
+import { GiHummingbird } from 'react-icons/gi';
 
 
 //-> file imports
@@ -20,8 +22,8 @@ const UiUx = () => {
         >
 
             <div className={"slider_box_divider"}>
-                <h4>Say <span className={"strike"}>Nothing</span>! i'll be here soon</h4>
-                <IoHourglassOutline style={{color: '#1a84cc', fontSize: '2.8rem'}} />
+                <GiHummingbird style={{color: '#1a84cc', fontSize: '12rem'}} />
+                <h4>Check out on <span className={"strike"}> all</span> some of my designs <a href="https://dribbble.com/mat__ayo" target="_blank" rel="noreferrer noopener">here </a> <span className={"blinkingVL"}> /</span></h4>
             </div>
 
         </AwesomeSlider>

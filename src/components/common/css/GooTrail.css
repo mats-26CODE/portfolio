@@ -8,7 +8,7 @@
     border-radius: 50%;
     background: #2A2ACC;
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
-    opacity: 0.6;
+    opacity: 0.8;
   }
   
   .hooks-main > div:nth-child(1) {
@@ -57,5 +57,6 @@
     height: 100%;
     filter: url('#goo');
     overflow: hidden;
+    z-index: -1;
   }
   

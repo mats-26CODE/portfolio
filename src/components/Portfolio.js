@@ -35,7 +35,7 @@ const Portfolio = () => {
                         </Grid>
 
                         <Grid item xs={12} sm={4} md={4} lg={4} xl={4} className={"project_box"}>
-                            <div onClick={() => setUiUxVisible(true)}><h4>UI/UX /</h4></div>
+                            <div onClick={() => setUiUxVisible(true)}><h4>UI/UX + Designs /</h4></div>
                         </Grid>
                     </Grid>
                 </div>

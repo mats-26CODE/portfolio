@@ -38,7 +38,7 @@
 
 .project_box > div h4 {
     font-family: Nunito-regular, sans-serif;
-    font-size: 1.4rem;
+    font-size: 1rem;
     color: #c5c5c5;
 }
 
@@ -78,6 +78,19 @@
     font-family: Nunito-bold, sans-serif;
     font-size: 1.8rem;
     color: #c5c5c5;
+}
+
+.slider_box_divider a {
+    color: #c5c5c5;
+    text-decoration-color: #5554D7;
+}
+
+.slider_box_divider a:hover {
+    color: #fcfcfc;
+    cursor: pointer;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    text-decoration: none;
 }
 
 .emoji_hand_next {

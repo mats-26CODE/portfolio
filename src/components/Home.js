@@ -31,7 +31,7 @@ import dp from '../assets/images/dp.png';
 import Button from './common/Button';
 import NavBar from './NavBar';
 import Footer from './Footer';
-import GooTrail from './common/GooTrail';
+import Goo from './common/GooTrail';
 
 const useStyles = makeStyles((theme) => ({
     large: {
@@ -122,7 +122,7 @@ const Home = () => {
                         <IoGameController size={'2em'} color={'#353535'} />
                     </div>
                     {/* trailing bubble */}
-                    <GooTrail />
+                    <Goo/>
                     {/* --------------- */}
                 </div>
             </Grid>
@@ -164,10 +164,10 @@ const Home = () => {
                             </div>
                         </Grid>
                     </Grid>
+                    {/* trailing bubble */}
+                    {/* <GooTrail /> */}
+                    {/* --------------- */}
                 </div>
-                {/* trailing bubble */}
-                <GooTrail />
-                {/* --------------- */}
             </Grid>
 
             <Grid container className={"scrollBox socialHookUp"}>
@@ -193,7 +193,7 @@ const Home = () => {
                     </Grid>
                 </div>
                 {/* trailing bubble */}
-                <GooTrail />
+                {/* <GooTrail /> */}
                 {/* --------------- */}
                 <Footer />
             </Grid>
