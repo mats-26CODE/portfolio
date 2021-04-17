@@ -4,6 +4,10 @@ import './css/Home.css';
 import { makeStyles } from '@material-ui/core/styles';
 import { ReactComponent as CodingArtwork } from '../assets/images/coding.svg';
 import { Link as ScrollLink } from 'react-scroll';
+import {
+    isBrowser,
+    isMobile
+  } from "react-device-detect";
 
 //-> react icon imports
 import { 
@@ -121,9 +125,12 @@ const Home = () => {
                         <IoFootball size={'2.5em'} color={'#353535'} />
                         <IoGameController size={'2em'} color={'#353535'} />
                     </div>
-                    {/* trailing bubble */}
-                    <Goo/>
-                    {/* --------------- */}
+                    
+                    {
+                        isBrowser ?
+                        <Goo/>
+                        : null
+                    }
                 </div>
             </Grid>
 
