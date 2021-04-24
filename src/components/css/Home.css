@@ -76,7 +76,6 @@
     -moz-animation: alternate 5s infinite beat;
     -o-animation: alternate 5s infinite beat;
     animation: alternate 5s infinite beat;
-    animation-delay: 1s;
 }
 
 
@@ -181,6 +180,22 @@
     -ms-transition: all 1s;
     -o-transition: all 1s;
     transition: all 1s;
+}
+
+@media screen and ( max-width: 720px) {
+    .landing_info_box > div:nth-child(2) h5 {
+        font-size: 2.2rem;
+    }
+    .landing_info_box > div:last-child h6 {
+        font-size: 1rem;
+    }
+    .contact_box {
+        width: 10%;
+        margin: 1rem auto;
+    }
+    .contact_box button {
+        font-size: 0.6rem;
+    }
 }
 
 .landing_info_box > div:nth-child(2) h5:hover {

@@ -112,10 +112,10 @@ const Home = () => {
                     <CodingArtwork className={"codingArtwork"} />
 
                     <div className={"landingIconsBox"}>
-                        <IoBrushSharp style={{color: "#0074bb", fontSize: '2rem' }}/>
-                        <GiFountainPen style={{color: "#008DD5", fontSize: '2rem' }}  />
-                        <ImPencil style={{color: "#0c69d5", fontSize: '2rem' }}/>
-                        <GiEyedropper style={{color: "#20EEEE", fontSize: '2rem' }} />
+                        <IoBrushSharp style={{color: "#0074bb", fontSize: '1.5rem' }}/>
+                        <GiFountainPen style={{color: "#008DD5", fontSize: '1.5rem' }}  />
+                        <ImPencil style={{color: "#0c69d5", fontSize: '1.5rem' }}/>
+                        <GiEyedropper style={{color: "#20EEEE", fontSize: '1.5rem' }} />
                     </div>
 
                     <div id={'triangle-bottomleft'}></div>
