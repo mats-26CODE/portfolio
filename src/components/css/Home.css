@@ -323,7 +323,7 @@
 }
 
 .aboutBox h5 {
-    font-family: Nunito-bold, sans-serif;
+    font-family: "Nunito-bold", sans-serif;
     font-size: 3rem;
     color: #c5c5c5;
     text-align: center;
@@ -349,7 +349,7 @@
 }
 
 .aboutBox h6 {
-    font-family: Nunito-regular, sans-serif;
+    font-family: "Nunito-regular", sans-serif;
     font-size: 1.6rem;
     color: #c5c5c5;
     margin: 0.8rem 0 0.8rem 0;
