@@ -47,7 +47,7 @@
     left: 0;
     width: 0;
     height: 0;
-    border-bottom: 100px solid #252525;
+    border-bottom: 100px solid #2828aa;
     border-right: 100px solid transparent;
 }
 
@@ -57,7 +57,7 @@
     right: 0;
     width: 0;
     height: 0;
-    border-bottom: 100px solid #252525;
+    border-bottom: 100px solid #2828aa;
     border-left: 100px solid transparent;
 }
 

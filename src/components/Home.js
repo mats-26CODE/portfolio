@@ -24,6 +24,9 @@ import { CgMouse } from "react-icons/cg";
 import { GiFountainPen, GiEyedropper } from "react-icons/gi";
 import { ImPencil } from "react-icons/im";
 import { DiPhp, DiCss3 } from "react-icons/di";
+import { RiFlutterFill } from "react-icons/ri";
+import { SiAdobexd } from "react-icons/si";
+import { FaFigma, FaSketch } from "react-icons/fa";
 
 //-> file import
 import dp from "../assets/images/dp.png";
@@ -160,10 +163,13 @@ const Home = () => {
                     Currently working with <IoLogoReact
                       color={"#20eeee"}
                     />{" "}
-                    React + React Native, <DiPhp color={"#7477AE"} /> PHP,{" "}
+                    React, React Native, Redux <DiPhp color={"#7477AE"} /> PHP,{" "}
                     <IoLogoJavascript color={"#EFD819"} /> JavaScript,{" "}
                     <IoLogoHtml5 color={"#DD4B25"} /> HTML,{" "}
-                    <DiCss3 color={"#244CDD"} /> CSS to solve{" "}
+                    <DiCss3 color={"#244CDD"} /> CSS,{" "}
+                    <FaFigma color={"white"} /> Figma,{" "}
+                    <FaSketch color={"#F58E01"} /> Sketch,{" "}
+                    <SiAdobexd color={"#892B7F"} /> Adobe XD to solve{" "}
                     <span className={"strike"}>some</span>,
                     <span className={"strike"}>all</span>, problems.
                     <br />I enjoy UI/UX designing, to be honest i am not marvel,
@@ -172,6 +178,11 @@ const Home = () => {
                     <span className={"emoji"} role="img" aria-label="emoji">
                       😎
                     </span>
+                    <br />I am currently learning{" "}
+                    <span className={"emoji"}>
+                      <RiFlutterFill color={"#5AA5F2"} />
+                    </span>{" "}
+                    Flutter (Dart)
                     <br />
                     <span className={"emoji"} role="img" aria-label="emoji">
                       👉
@@ -274,23 +285,6 @@ const Home = () => {
                   here
                 </a>
               </h6>
-            </Grid>
-
-            <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-              <div style={{ display: "grid", placeItems: "center", textAlign: 'center' }}>
-                <div>
-                  <p style={{ color: "white", fontSize: '1.8rem', marginTop: '1rem' }}>
-                    And, Check out my dailydev DEV CARD 🚀 below
-                  </p>
-                  <a href="https://app.daily.dev/mat__ayo">
-                    <img
-                      src="https://api.daily.dev/devcards/86f6faa3e85b4332a2a01d52bbf527e9.png?r=pye"
-                      width="200"
-                      alt="Mathayo Maendeleo's Dev Card"
-                    />  
-                  </a>
-                </div>
-              </div>
             </Grid>
           </Grid>
         </div>
