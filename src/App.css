@@ -14,35 +14,35 @@
 }
 @font-face {
   font-family: "Ubuntu-bold";
-  src: url('./assets/fonts/Ubuntu-Bold.ttf');
+  src: url("./assets/fonts/Ubuntu-Bold.ttf");
 }
 @font-face {
   font-family: "Nunito-bold";
-  src: url('./assets/fonts/Nunito-Bold.ttf');
+  src: url("./assets/fonts/Nunito-Bold.ttf");
 }
 @font-face {
   font-family: "Nunito-light";
-  src: url('./assets/fonts/Nunito-Light.ttf');
+  src: url("./assets/fonts/Nunito-Light.ttf");
 }
 @font-face {
   font-family: "Nunito-regular";
-  src: url('./assets/fonts/Nunito-Regular.ttf');
+  src: url("./assets/fonts/Nunito-Regular.ttf");
 }
 @font-face {
   font-family: "Poppins-bold";
-  src: url('./assets/fonts/Poppins-Bold.ttf');
+  src: url("./assets/fonts/Poppins-Bold.ttf");
 }
 @font-face {
   font-family: "Poppins-regular";
-  src: url('./assets/fonts/Poppins-Regular.ttf');
+  src: url("./assets/fonts/Poppins-Regular.ttf");
 }
 @font-face {
   font-family: "Poppins-light";
-  src: url('./assets/fonts/Poppins-Light.ttf');
+  src: url("./assets/fonts/Poppins-Light.ttf");
 }
 @font-face {
   font-family: "Poppins-medium";
-  src: url('./assets/fonts/Poppins-Medium.ttf');
+  src: url("./assets/fonts/Poppins-Medium.ttf");
 }
 
 html {
@@ -52,7 +52,7 @@ html {
 
 .loading_screen {
   width: 100%;
-  height:100vh;
+  height: 100vh;
   background-color: #1c1c1c;
   display: grid;
   place-items: center;
@@ -67,7 +67,7 @@ html {
 .loading_screen > div h4 {
   font-family: Nunito-light, sans-serif;
   font-size: 1.2rem;
-  color: #008DD5;
+  color: #008dd5;
 }
 
 footer {
@@ -86,7 +86,6 @@ footer > div h6 {
   color: #fcfcfc;
 }
 
-
 @media (prefers-reduced-motion: no-preference) {
   .fanIcon {
     color: #4884dd;
@@ -104,20 +103,20 @@ footer > div h6 {
 }
 
 .fanIcon:hover {
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
   transform: scale(1.2);
   -webkit-transform: scale(1.5);
   -webkit-animation-name: spin;
-    animation-name: spin;
-    -webkit-animation-duration: 5s;
-    animation-duration: 5s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    -webkit-animation-iteration-count: infinite;
+  animation-name: spin;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
 }
 
 @keyframes spin {
@@ -130,7 +129,7 @@ footer > div h6 {
 }
 
 .emoji {
-  opacity: .9;
+  opacity: 0.9;
 }
 
 /*customized browser scroll bar*/
@@ -139,47 +138,50 @@ footer > div h6 {
 }
 
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(6, 0, 20, 0.3); 
-  -webkit-box-shadow: inset 0 0 6px rgba(11, 0, 61, 0.3); 
+  box-shadow: inset 0 0 6px rgba(6, 0, 20, 0.3);
+  -webkit-box-shadow: inset 0 0 6px rgba(11, 0, 61, 0.3);
   border-radius: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
   border-radius: 8px;
-  background: rgba(54, 54, 54, 0.8); 
+  background: rgba(54, 54, 54, 0.8);
   box-shadow: inset 0 0 6px rgba(2, 56, 138, 0.5);
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 5, 34, 0.5); 
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 5, 34, 0.5);
 }
 
 /*-----Responsive Display CSS, Minor Artworks and Font sizes updates */
 
 /*!* Extra small devices (phones, 600px and down) *!*/
 /*@media only screen and (max-width: 600px) {*/
-    /*.codingArtwork {*/
-        /*width: 12rem;*/
-        /*object-fit: contain;*/
-        /**/
-    /*}*/
+/*.codingArtwork {*/
+/*width: 12rem;*/
+/*object-fit: contain;*/
+/**/
+/*}*/
 /*}*/
 
 /*!* Small devices (portrait tablets and large phones, 600px and up) *!*/
 /*@media only screen and (max-width: 600px) {*/
-    /*.codingArtwork {*/
-        /*width: 12rem;*/
-        /*object-fit: contain;*/
-    /*}*/
+/*.codingArtwork {*/
+/*width: 12rem;*/
+/*object-fit: contain;*/
+/*}*/
 /*}*/
 
 /*Medium devices (landscape tablets, 768px and down)*/
 @media only screen and (max-width: 768px) {
-    .codingArtwork {
-        width: 12rem;
-        height: 6rem;
-        opacity: 0.5;
-    }
+  .codingArtwork {
+    width: 12rem;
+    height: 6rem;
+    opacity: 0.5;
+  }
 
-    .aboutNickNameBox {
-        display: none;
-    }
+  .aboutNickNameBox {
+    display: none;
+  }
 
+  .aboutBox p {
+    font-size: 0.8rem;
+  }
 }

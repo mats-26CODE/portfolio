@@ -1,46 +1,50 @@
 .modal_container {
-    position: fixed;
-    display: block; 
-    overflow: auto; 
-    width: 100%; 
-    height: 100%; 
-    top: 0; 
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #444444;
-    z-index: 999; 
-    cursor: pointer;
+  position: fixed;
+  display: block;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #444444;
+  z-index: 999;
+  cursor: pointer;
 }
 
 .modal_body {
-    margin: 15% auto;
-    background: rgb(28,28,28);
-    background: linear-gradient(60deg, rgba(28,28,28,1) 0%, rgba(5,34,82,1) 100%);
-    border-radius: 0.25rem;
-    width: 80vw;
-    padding: 2.5rem;
-    position: relative;
+  margin: 15% auto;
+  background: rgb(28, 28, 28);
+  background: linear-gradient(
+    60deg,
+    rgba(28, 28, 28, 1) 0%,
+    rgba(5, 34, 82, 1) 100%
+  );
+  border-radius: 0.25rem;
+  width: 80vw;
+  padding: 2.5rem;
+  position: relative;
 }
 
 .modal_close_icon {
-    color: #2770df;
-    padding: 10px;
-    font-size: 1.5rem;
-    background-color: transparent;
-    border: 0;
-    position: absolute;
-    top: 0.3rem;
-    right: 0.5rem;
-    -webkit-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
+  color: #2770df;
+  padding: 10px;
+  font-size: 1.5rem;
+  background-color: transparent;
+  border: 0;
+  position: absolute;
+  top: 0.3rem;
+  right: 0.5rem;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .modal_close_icon:hover {
-    cursor: pointer;
-    -webkit-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    transform: scale(1.1);
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  transform: scale(1.1);
 }

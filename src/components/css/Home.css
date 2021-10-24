@@ -1,149 +1,147 @@
 .home_container {
-    scroll-snap-type: y mandatory;
-    height: 100vh;
-    overflow: auto;
-    scroll-snap-type: y mandatory;
+  scroll-snap-type: y mandatory;
+  height: 100vh;
+  overflow: auto;
+  scroll-snap-type: y mandatory;
 }
 
-
 /*@media (prefers-reduced-motion: no-preference) {*/
-    /*.App-logo {*/
-        /*animation: App-logo-spin infinite 20s linear;*/
-    /*}*/
+/*.App-logo {*/
+/*animation: App-logo-spin infinite 20s linear;*/
+/*}*/
 /*}*/
 
 .home_container > div:first-child {
-    background-color: #1c1c1c;
+  background-color: #1c1c1c;
 }
 
 .home_container > div:nth-child(2) {
-    background-color: #11112e;
+  background-color: #11112e;
 }
 
 .home_container > div:last-child {
-    background-color: #050517;
+  background-color: #050517;
 }
 
 .scrollBox {
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    scroll-snap-align: start;
-    overflow: hidden;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  scroll-snap-align: start;
+  overflow: hidden;
 }
 
 .landing_box {
-    position: relative;
-    width: 100%;
-    background-color: #1c1c1c;
-    display: grid;
-    place-items: center;
-    z-index: 1;
+  position: relative;
+  width: 100%;
+  background-color: #1c1c1c;
+  display: grid;
+  place-items: center;
+  z-index: 1;
 }
 
-#triangle-bottomleft {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 0;
-    border-bottom: 100px solid #2828aa;
-    border-right: 100px solid transparent;
+#triangle_bottomleft {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 100px solid #161616;
+  border-right: 100px solid transparent;
 }
 
-#triangle-bottomright {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 0;
-    height: 0;
-    border-bottom: 100px solid #2828aa;
-    border-left: 100px solid transparent;
+#triangle_bottomright {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 100px solid #161616;
+  border-left: 100px solid transparent;
 }
 
 #landing_icons {
-    position: absolute;
-    top: -10%; 
-    left: 50%;
-    transform: translate(-50%, 50%);
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  transform: translate(-50%, 50%);
 }
 
 .codingArtwork {
-    position: absolute;
-    bottom: 2.5rem;
-    left: -1rem;
-    -webkit-animation: alternate 5s infinite beat;
-    -moz-animation: alternate 5s infinite beat;
-    -o-animation: alternate 5s infinite beat;
-    animation: alternate 5s infinite beat;
+  position: absolute;
+  bottom: 2.5rem;
+  left: -1rem;
+  -webkit-animation: alternate 5s infinite beat;
+  -moz-animation: alternate 5s infinite beat;
+  -o-animation: alternate 5s infinite beat;
+  animation: alternate 5s infinite beat;
 }
 
-
 @keyframes beat {
-    0%{
-        -webkit-transform: scale(.85);
-        -moz-transform: scale(.85);
-        -ms-transform: scale(.85);
-        -o-transform: scale(.85);
-        transform: scale(.85);
-    }
-    100% {
-        -webkit-transform: scale(.88);
-        -moz-transform: scale(.88);
-        -ms-transform: scale(.88);
-        -o-transform: scale(.88);
-        transform: scale(.88);
-    }
+  0% {
+    -webkit-transform: scale(0.85);
+    -moz-transform: scale(0.85);
+    -ms-transform: scale(0.85);
+    -o-transform: scale(0.85);
+    transform: scale(0.85);
+  }
+  100% {
+    -webkit-transform: scale(0.88);
+    -moz-transform: scale(0.88);
+    -ms-transform: scale(0.88);
+    -o-transform: scale(0.88);
+    transform: scale(0.88);
+  }
 }
 
 .landingIconsBox {
-    position: absolute;
-    bottom: 4rem;
-    right: 1rem;
+  position: absolute;
+  bottom: 4rem;
+  right: 1rem;
 }
 
 .landing_dp {
-    width: 100px;
-    height: 100px;
-    margin: 0 auto;
-    display: grid;
-    place-items: center;
-    --border-width: 3px;
-    border-radius: 50%;
-    padding: 0.5rem;
-    position: relative;
-    background: #1c1c1c;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+  --border-width: 3px;
+  border-radius: 50%;
+  padding: 0.5rem;
+  position: relative;
+  background: #1c1c1c;
 }
 
 .landing_dp::after {
-    position: absolute;
-    content: "";
-    top: calc(-1 * var(--border-width));
-    left: calc(-1 * var(--border-width));
-    z-index: -1;
-    width: calc(100% + var(--border-width) * 2);
-    height: calc(100% + var(--border-width) * 2);
-    background: linear-gradient(
-      60deg,
-      hsl(189, 93%, 54%),
-      hsl(214, 100%, 46%),
-      hsl(239, 71%, 41%),
-      hsl(192, 100%, 58%),
-      hsl(199, 100%, 36%),
-      hsl(229, 76%, 42%),
-      hsl(165, 100%, 72%),
-      hsl(143, 100%, 42%)
-    );
-    background-size: 200% 200%;
-    background-position: 0 50%;
-    border-radius: 50%;
-    animation: moveGradient 4s alternate infinite;
+  position: absolute;
+  content: "";
+  top: calc(-1 * var(--border-width));
+  left: calc(-1 * var(--border-width));
+  z-index: -1;
+  width: calc(100% + var(--border-width) * 2);
+  height: calc(100% + var(--border-width) * 2);
+  background: linear-gradient(
+    60deg,
+    hsl(189, 93%, 54%),
+    hsl(214, 100%, 46%),
+    hsl(239, 71%, 41%),
+    hsl(192, 100%, 58%),
+    hsl(199, 100%, 36%),
+    hsl(229, 76%, 42%),
+    hsl(165, 100%, 72%),
+    hsl(143, 100%, 42%)
+  );
+  background-size: 200% 200%;
+  background-position: 0 50%;
+  border-radius: 50%;
+  animation: moveGradient 4s alternate infinite;
 }
 
 @keyframes moveGradient {
-    50% {
-      background-position: 100% 50%;
-    }
+  50% {
+    background-position: 100% 50%;
+  }
 }
 
 /* .landing_info_box {
@@ -151,93 +149,93 @@
 } */
 
 .landing_info_box > div:nth-child(2) {
-    padding-top: 1rem;
+  padding-top: 1rem;
 }
 
 .landing_info_box > div:nth-child(2) h5 {
-    font-family: freestyleScript, sans-serif;
-    font-size: 4rem;
-    color: #008DD5;
-    text-align: center;
-    font-weight: normal;
+  font-family: freestyleScript, sans-serif;
+  font-size: 4rem;
+  color: #008dd5;
+  text-align: center;
+  font-weight: normal;
 
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -ms-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
 }
 
 .landing_info_box > div:last-child h6 {
-    font-family: freestyleScript, sans-serif;
-    font-size: 1.8rem;
-    color: #20eeee;
-    font-weight: normal;
-    text-align: center;
+  font-family: freestyleScript, sans-serif;
+  font-size: 1.8rem;
+  color: #20eeee;
+  font-weight: normal;
+  text-align: center;
 
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -ms-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
 }
 
-@media screen and ( max-width: 720px) {
-    .landing_info_box > div:nth-child(2) h5 {
-        font-size: 2.2rem;
-    }
-    .landing_info_box > div:last-child h6 {
-        font-size: 1rem;
-    }
-    .contact_box {
-        width: 10%;
-        margin: 1rem auto;
-    }
-    .contact_box button {
-        font-size: 0.6rem;
-    }
+@media screen and (max-width: 720px) {
+  .landing_info_box > div:nth-child(2) h5 {
+    font-size: 2.2rem;
+  }
+  .landing_info_box > div:last-child h6 {
+    font-size: 1rem;
+  }
+  .contact_box {
+    width: 10%;
+    margin: 1rem auto;
+  }
+  .contact_box button {
+    font-size: 0.6rem;
+  }
 }
 
 .landing_info_box > div:nth-child(2) h5:hover {
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -ms-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1s;
-    -webkit-transform: translateX(5px);
-    -moz-transform: translateX(5px);
-    -ms-transform: translateX(5px);
-    -o-transform: translateX(5px);
-    transform: translateX(5px);
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  -webkit-transform: translateX(5px);
+  -moz-transform: translateX(5px);
+  -ms-transform: translateX(5px);
+  -o-transform: translateX(5px);
+  transform: translateX(5px);
 }
 
 .landing_info_box > div:last-child h6:hover {
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -ms-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1s;
-    -webkit-transform: translateX(-5px);
-    -moz-transform: translateX(-5px);
-    -ms-transform: translateX(-5px);
-    -o-transform: translateX(-5px);
-    transform: translateX(-5px);
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  -webkit-transform: translateX(-5px);
+  -moz-transform: translateX(-5px);
+  -ms-transform: translateX(-5px);
+  -o-transform: translateX(-5px);
+  transform: translateX(-5px);
 }
 
 /*  blinking vertical Line */
 @media (prefers-reduced-motion: no-preference) {
-    .blinkingVL {
-        animation: 1s blink infinite;
-    }    
+  .blinkingVL {
+    animation: 1s blink infinite;
+  }
 }
 
 @keyframes blink {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* .landing_contact_info {
@@ -245,297 +243,306 @@
 } */
 
 .contact_box {
-    width: 15%;
-    margin: 1rem auto;
+  width: 15%;
+  margin: 1rem auto;
 }
 
 .contact_box button {
-    width: 100%;
-    padding: 0.2rem 1rem 0.2rem 1rem;
-    color: #c5c5c5;
-    border: 0.15rem solid #5554D7;
-    border-radius: 2rem;
-    font-family: Nunito-bold, sans-serif;
-    font-size: 0.8rem;
-    text-align: center;
-    text-transform: capitalize;
-    text-decoration: underline;
+  width: 100%;
+  padding: 0.2rem 1rem 0.2rem 1rem;
+  color: #c5c5c5;
+  border: 0.15rem solid #5554d7;
+  border-radius: 2rem;
+  font-family: Nunito-bold, sans-serif;
+  font-size: 0.8rem;
+  text-align: center;
+  text-transform: capitalize;
+  text-decoration: underline;
 }
 
 .contact_box a {
-    color: #c5c5c5;
-    text-decoration: none;
-    text-decoration-color: #5554D7;
+  color: #c5c5c5;
+  text-decoration: none;
+  text-decoration-color: #5554d7;
 }
 
 .mouseIcon,
 .chevronIcon {
-    font-size: 1.6rem;
-    color: #c5c5c5;
-    -webkit-animation-name: bounce;
-    animation-name: bounce;
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    -webkit-animation-iteration-count: infinite;
+  font-size: 1.6rem;
+  color: #c5c5c5;
+  -webkit-animation-name: bounce;
+  animation-name: bounce;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
 }
 
 @-webkit-keyframes bounce {
-    0%, 100% {
-        -webkit-transform: translateY(0);
-        opacity: .6;
-    }
-    50% {
-        -webkit-transform: translateY(-5px);
-        opacity: 1;
-    }
+  0%,
+  100% {
+    -webkit-transform: translateY(0);
+    opacity: 0.6;
+  }
+  50% {
+    -webkit-transform: translateY(-5px);
+    opacity: 1;
+  }
 }
 
 @keyframes bounce {
-    0%, 100% {
-        transform: translateY(0);
-        opacity: .6;
-    }
-    50% {
-        transform: translateY(-5px);
-        opacity: 1;
-    }
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(-5px);
+    opacity: 1;
+  }
 }
 
 .mouseIcon:hover,
 .chevronIcon:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .strike {
-    text-decoration: line-through;
+  text-decoration: line-through;
 }
 
 .aboutBox {
-    width: 100%;
-    display: grid;
-    place-items: center;
-    padding: 0 1rem 0 1rem;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  padding: 0 1rem 0 1rem;
 }
 
 .aboutBox h5 {
-    font-family: "Nunito-bold", sans-serif;
-    font-size: 3rem;
-    color: #c5c5c5;
-    text-align: center;
+  font-family: "Nunito-bold", sans-serif;
+  font-size: 3rem;
+  color: #c5c5c5;
+  text-align: center;
 
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -ms-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
 }
 
 .aboutBox h5:hover {
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -ms-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1s;
-    -webkit-transform: translateX(-10px);
-    -moz-transform: translateX(-10px);
-    -ms-transform: translateX(-10px);
-    -o-transform: translateX(-10px);
-    transform: translateX(-10px);
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  -webkit-transform: translateX(-10px);
+  -moz-transform: translateX(-10px);
+  -ms-transform: translateX(-10px);
+  -o-transform: translateX(-10px);
+  transform: translateX(-10px);
 }
 
 .aboutBox h6 {
-    font-family: "Nunito-regular", sans-serif;
-    font-size: 1.6rem;
-    color: #c5c5c5;
-    margin: 0.8rem 0 0.8rem 0;
+  font-family: "Nunito-regular", sans-serif;
+  font-size: 1.6rem;
+  color: #c5c5c5;
+  margin: 0.8rem 0 0.8rem 0;
 
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -ms-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
 }
 
 .aboutBox h6:hover {
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -ms-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1s;
-    -webkit-transform: translateX(5px);
-    -moz-transform: translateX(5px);
-    -ms-transform: translateX(5px);
-    -o-transform: translateX(5px);
-    transform: translateX(5px);
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  -webkit-transform: translateX(5px);
+  -moz-transform: translateX(5px);
+  -ms-transform: translateX(5px);
+  -o-transform: translateX(5px);
+  transform: translateX(5px);
 }
 
 .aboutBox p {
-    font-family: Poppins-regular, sans-serif;
-    font-size: 1.05rem;
-    color: #c5c5c5;
-    margin: 0.5rem 0 0.5rem 0;
+  font-family: Poppins-regular, sans-serif;
+  font-size: 1.05rem;
+  color: #c5c5c5;
+  margin: 0.5rem 0 0.5rem 0;
 
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -ms-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
 }
 
 .aboutBox p:hover {
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -ms-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1s;
-    -webkit-transform: translateX(-10px);
-    -moz-transform: translateX(-10px);
-    -ms-transform: translateX(-10px);
-    -o-transform: translateX(-10px);
-    transform: translateX(-10px);
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  -webkit-transform: translateX(-10px);
+  -moz-transform: translateX(-10px);
+  -ms-transform: translateX(-10px);
+  -o-transform: translateX(-10px);
+  transform: translateX(-10px);
 }
 
 .aboutNickNameBox {
-    width: 30%;
-    height: 35%;
-    margin: 0 auto;
-    padding: 2rem;
-    border: 3rem solid #2828aa;
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -ms-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1s;
+  width: 30%;
+  height: 35%;
+  margin: 0 auto;
+  padding: 2rem;
+  border: 3rem solid #2828aa;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
 }
 
 .aboutNickNameBox h4 {
-    font-family: Nunito-bold, sans-serif;
-    font-size: 2rem;
-    color: #c5c5c5;
-    text-align: center;
+  font-family: Nunito-bold, sans-serif;
+  font-size: 2rem;
+  color: #c5c5c5;
+  text-align: center;
 }
 
 .mtNickName {
-    font-family: Nunito-bold, sans-serif;
-    font-size: 3rem;
+  font-family: Nunito-bold, sans-serif;
+  font-size: 3rem;
 }
 
 .aboutNickNameBox:hover {
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -ms-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1s;
-    -webkit-transform: translateX(10px);
-    -moz-transform: translateX(10px);
-    -ms-transform: translateX(10px);
-    -o-transform: translateX(10px);
-    transform: translateX(10px);
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  -webkit-transform: translateX(10px);
+  -moz-transform: translateX(10px);
+  -ms-transform: translateX(10px);
+  -o-transform: translateX(10px);
+  transform: translateX(10px);
 }
 
 .workText {
-    font-family: Poppins-regular, sans-serif;
-    font-size: 1rem;
-    color: #a0ccf5;
+  font-family: Poppins-regular, sans-serif;
+  font-size: 1rem;
+  color: #a0ccf5;
 }
 
-.workText a, .socialBox h6 a, .about a {
-    color: #c5c5c5;
-    text-decoration-color: #5554D7;
+.workText a {
+  color: #c5c5c5;
+  text-decoration-color: #5554d7;
+  margin-left: 4px;
 }
 
-.workText a:hover, .socialBox h6 a:hover, .about a:hover {
-    color: #fcfcfc;
-    cursor: pointer;
-    transition: all .5s;
-    -webkit-transition: all .5s;
-    text-decoration: none;
+.socialBox h6 a,
+.about a {
+  color: #c5c5c5;
+  text-decoration-color: #5554d7;
+}
+
+.workText a:hover,
+.socialBox h6 a:hover,
+.about a:hover {
+  color: #fcfcfc;
+  cursor: pointer;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  text-decoration: none;
 }
 
 .socialBox {
-    width: 100%;
-    display: grid;
-    place-items: center;
-    padding: 0 1rem 0 1rem;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  padding: 0 1rem 0 1rem;
 }
 
 .socialBox h5 {
-    font-family: freeStyleScript, sans-serif;
-    font-size: 4.2rem;
-    color: #c5c5c5;
-    font-weight: normal;
-    text-align: center;
+  font-family: freeStyleScript, sans-serif;
+  font-size: 4.2rem;
+  color: #c5c5c5;
+  font-weight: normal;
+  text-align: center;
 
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -ms-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
 }
 
 .socialBox h5:hover {
-    -webkit-transition: all 1s;
-    -moz-transition: all 1s;
-    -ms-transition: all 1s;
-    -o-transition: all 1s;
-    transition: all 1s;
-    -webkit-transform: translateX(-10px);
-    -moz-transform: translateX(-10px);
-    -ms-transform: translateX(-10px);
-    -o-transform: translateX(-10px);
-    transform: translateX(-10px);
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  -webkit-transform: translateX(-10px);
+  -moz-transform: translateX(-10px);
+  -ms-transform: translateX(-10px);
+  -o-transform: translateX(-10px);
+  transform: translateX(-10px);
 }
 
-
 .socialBox h6 {
-    font-family: freeStyleScript, sans-serif;
-    font-size: 2rem;
-    color: #c5c5c5;
-    font-weight: normal;
-    text-align: center;
+  font-family: freeStyleScript, sans-serif;
+  font-size: 2rem;
+  color: #c5c5c5;
+  font-weight: normal;
+  text-align: center;
 }
 
 .socialIcon {
-    border: 0.15rem solid #5554D7;
-    border-radius: 50%;
-    margin: 0 .4rem 0 0.4rem;
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    -ms-transition: all .3s;
-    -o-transition: all .3s;
-    transition: all .3s;
+  border: 0.15rem solid #5554d7;
+  border-radius: 50%;
+  margin: 0 0.4rem 0 0.4rem;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .socialIcon:hover {
-    background: linear-gradient(
-            60deg,
-            hsl(240, 62%, 59%),
-            hsl(241, 62%, 59%),
-            hsl(241, 44%, 45%),
-            hsl(245, 59%, 61%),
-            hsl(199, 100%, 36%),
-            hsl(240, 100%, 69%),
-            hsl(240, 47%, 20%),
-            hsl(241, 42%, 37%)
-    );
-    background-size: 200% 200%;
-    background-position: 0 50%;
-    border-radius: 50%;
-    animation: moveGradient 4s alternate infinite;
-    -webkit-transition: all .3s;
-    -moz-transition: all .3s;
-    -ms-transition: all .3s;
-    -o-transition: all .3s;
-    transition: all .3s;
-    -webkit-transform: scale(1.1);
-    -moz-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    transform: scale(1.1);
+  background: linear-gradient(
+    60deg,
+    hsl(240, 62%, 59%),
+    hsl(241, 62%, 59%),
+    hsl(241, 44%, 45%),
+    hsl(245, 59%, 61%),
+    hsl(199, 100%, 36%),
+    hsl(240, 100%, 69%),
+    hsl(240, 47%, 20%),
+    hsl(241, 42%, 37%)
+  );
+  background-size: 200% 200%;
+  background-position: 0 50%;
+  border-radius: 50%;
+  animation: moveGradient 4s alternate infinite;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
 }
-

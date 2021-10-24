@@ -127,8 +127,8 @@ const Home = () => {
             <GiEyedropper style={{ color: "#20EEEE", fontSize: "1.5rem" }} />
           </div>
 
-          <div id={"triangle-bottomleft"}></div>
-          <div id={"triangle-bottomright"}></div>
+          <div id={"triangle_bottomleft"}></div>
+          <div id={"triangle_bottomright"}></div>
           <div id={"landing_icons"}>
             <IoVideocamOutline size={"2em"} color={"#353535"} />
             <IoFootball size={"2.5em"} color={"#353535"} />
@@ -188,7 +188,7 @@ const Home = () => {
                       👉
                     </span>{" "}
                     <span className={"workText"}>
-                      Working at{" "}
+                      Built things at{" "}
                       <a
                         href="https://www.firm23.co.tz"
                         target="_blank"
@@ -196,8 +196,16 @@ const Home = () => {
                       >
                         Firm23
                       </a>
+                      <span>/</span>
+                      <a
+                        href="https://www.upwork.com"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                      >
+                        Upwork
+                      </a>
+                      <span className={"blinkingVL"}>/</span>
                     </span>{" "}
-                    <span className={"blinkingVL"}>/</span>
                   </p>
                 </div>
 
